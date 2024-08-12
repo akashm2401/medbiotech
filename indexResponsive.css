@@ -6,3 +6,30 @@
         margin-bottom: 50px;
     }
 }
+
+/* Timeline */
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 768px) {
+    .timeline-container #timeline:before {
+        left: 15.2%;
+        top: 2%;
+        height: 90%;
+    }
+
+    .timeline-container #timeline .timeline-icon {
+        left: 10%;
+    }
+
+    .timeline-container #timeline .timeline-content.right:before {
+        right: 80%;
+    }
+
+    .timeline-container #timeline .timeline-content:before {
+        border-left: none;
+        left: 20%;
+    }
+
+    .timeline-container #timeline .timeline-content {
+        width: 80%;
+    }
+}
