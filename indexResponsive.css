@@ -1,3 +1,44 @@
+/* Navbar */
+@media only screen and (max-width: 1023px) {
+    header nav {
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+
+    nav #brand-name, nav #hamburger {
+        width: 50%;
+    }
+
+    nav #hamburger {
+        justify-content: end;
+    }
+
+    nav #nav-bar-container {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 1s ease-in-out, padding 0.5s ease-in-out;
+        /* padding: 20px; */
+        width: 100%;
+    }
+
+    #nav-bar-container.expanded {
+        max-height: 500px;
+        padding: 20px;
+    }
+    
+    nav .nav-bar ul {
+        flex-direction: column;
+        row-gap: 10px;
+        width: 100%;
+    }
+
+    nav .nav-bar ul li {
+        width: 100%;
+        padding: 10px;
+        border-bottom: 1px solid #0000003a;
+        /* background-color: red; */
+    }
+}
 
 /* Guidence */
 @media only screen and (max-width: 1200px) {
@@ -33,3 +74,4 @@
         width: 80%;
     }
 }
+
